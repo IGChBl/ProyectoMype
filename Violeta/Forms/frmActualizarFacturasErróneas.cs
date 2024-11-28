@@ -14,16 +14,16 @@ namespace Proyecto
 {
     public partial class frmActualizarEliminarFacturaErronea : Form
     {
-     
+
         public frmActualizarEliminarFacturaErronea()
         {
             InitializeComponent();
         }
-        
-      
+
+
         private void ActualizarEliminarFacturaErronea_Load(object sender, EventArgs e)
         {
-            dgvFacturas.ColumnCount = 4; 
+            dgvFacturas.ColumnCount = 4;
             dgvFacturas.Columns[0].Name = "Numero";
             dgvFacturas.Columns[1].Name = "Cliente";
             dgvFacturas.Columns[2].Name = "Fecha";
@@ -73,8 +73,36 @@ namespace Proyecto
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            frmActualizaDatosFactura frmActualizar = new frmActualizaDatosFactura();
-            frmActualizar.ShowDialog();
+            if (dgvFacturas.SelectedRows.Count > 0)
+            {
+                // Extraer datos de la fila seleccionada
+                string cliente = dgvFacturas.SelectedRows[0].Cells["Cliente"].Value.ToString();
+                string numeroFactura = dgvFacturas.SelectedRows[0].Cells["Numero"].Value.ToString();
+                DateTime fecha = DateTime.Parse(dgvFacturas.SelectedRows[0].Cells["Fecha"].Value.ToString());
+                string total = dgvFacturas.SelectedRows[0].Cells["Total"].Value.ToString();
+
+                // Crear una lista con los datos seleccionados para pasar al segundo DataGridView
+                List<string[]> datosFactura = new List<string[]>
+        {
+            new string[] { numeroFactura, cliente, fecha.ToShortDateString(), total }
+        };
+
+                // Crear una instancia del segundo formulario
+                frmActualizaDatosFactura frmActualizar = new frmActualizaDatosFactura();
+
+                // Pasar el nombre del cliente al segundo formulario
+                frmActualizar.NombreCliente = cliente;
+
+                // Pasar los datos de la factura al segundo formulario
+                frmActualizar.DatosFactura = datosFactura;
+
+                // Mostrar el segundo formulario
+                frmActualizar.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una factura para actualizar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
