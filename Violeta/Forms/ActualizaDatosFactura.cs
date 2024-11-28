@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto
+namespace Proyecto.Forms
 {
-    public partial class frmListadoClientes : Form
+    public partial class frmActualizaDatosFactura : Form
     {
-        public frmListadoClientes()
+        public frmActualizaDatosFactura()
         {
             InitializeComponent();
+        }
+
+        private void ActualizaFactura2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -34,7 +34,6 @@
             this.dgvFacturas = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).BeginInit();
             this.SuspendLayout();
@@ -63,11 +62,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturas.Location = new System.Drawing.Point(142, 183);
+            this.dgvFacturas.Location = new System.Drawing.Point(49, 166);
             this.dgvFacturas.Name = "dgvFacturas";
             this.dgvFacturas.RowHeadersWidth = 51;
             this.dgvFacturas.RowTemplate.Height = 24;
-            this.dgvFacturas.Size = new System.Drawing.Size(240, 150);
+            this.dgvFacturas.Size = new System.Drawing.Size(445, 116);
             this.dgvFacturas.TabIndex = 2;
             // 
             // btnBuscar
@@ -83,23 +82,13 @@
             // btnActualizar
             // 
             this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnActualizar.Location = new System.Drawing.Point(49, 350);
+            this.btnActualizar.Location = new System.Drawing.Point(49, 311);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(129, 23);
             this.btnActualizar.TabIndex = 4;
             this.btnActualizar.Text = "Actualizar Factura";
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // button3
-            // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(335, 350);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(124, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Eliminar Factura";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -116,7 +105,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(553, 450);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dgvFacturas);
@@ -126,7 +114,7 @@
             this.Name = "frmActualizarEliminarFacturaErronea";
             this.Text = "Actualizar Factura Errónea";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Actualizar_o_Eliminar_Facturas_Erróneas_Load);
+            this.Load += new System.EventHandler(this.ActualizarEliminarFacturaErronea_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,7 +128,6 @@
         private System.Windows.Forms.DataGridView dgvFacturas;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label2;
     }
 }

@@ -77,11 +77,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\frmActualizarEliminarFacturasErróneas.cs">
+    <Compile Include="Forms\ActualizaDatosFactura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmActualizarEliminarFacturasErróneas.Designer.cs">
-      <DependentUpon>frmActualizarEliminarFacturasErróneas.cs</DependentUpon>
+    <Compile Include="Forms\ActualizaDatosFactura.Designer.cs">
+      <DependentUpon>ActualizaDatosFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmActualizarFacturasErróneas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmActualizarFacturasErróneas.Designer.cs">
+      <DependentUpon>frmActualizarFacturasErróneas.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmAgregarCliente.cs">
       <SubType>Form</SubType>
@@ -125,12 +131,6 @@
     <Compile Include="Forms\frmHistorialFacturas.Designer.cs">
       <DependentUpon>frmHistorialFacturas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmListadoClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmListadoClientes.Designer.cs">
-      <DependentUpon>frmListadoClientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\frmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,8 +157,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\frmActualizarEliminarFacturasErróneas.resx">
-      <DependentUpon>frmActualizarEliminarFacturasErróneas.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ActualizaDatosFactura.resx">
+      <DependentUpon>ActualizaDatosFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmActualizarFacturasErróneas.resx">
+      <DependentUpon>frmActualizarFacturasErróneas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAgregarCliente.resx">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
@@ -180,9 +183,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmInicioSesion.resx">
       <DependentUpon>frmInicioSesion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmListadoClientes.resx">
-      <DependentUpon>frmListadoClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>

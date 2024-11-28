@@ -59,5 +59,10 @@ namespace Proyecto.Forms
                 dgvClientes.DataSource = null; // Limpiar DataGridView
             }
         }
+
+        private void frmConsultarCliente_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

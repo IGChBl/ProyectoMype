@@ -20,7 +20,14 @@ namespace Proyecto
             new Servicio { Nombre = "Internet Básico", Precio = 20.00m },
             new Servicio { Nombre = "Internet Avanzado", Precio = 35.00m },
             new Servicio { Nombre = "Televisión Básica", Precio = 15.00m },
-            new Servicio { Nombre = "Televisión Avanzada", Precio = 25.00m }
+            new Servicio { Nombre = "Televisión Avanzada", Precio = 25.00m },
+            new Servicio { Nombre = "Streaming Básico", Precio = 10.00m },
+            new Servicio { Nombre = "Streaming Avanzado", Precio = 18.00m },
+            new Servicio { Nombre = "Mantenimiento Técnico", Precio = 30.00m },
+            new Servicio { Nombre = "Alquiler de Router", Precio = 12.00m },
+            new Servicio { Nombre = "Canales Premium", Precio = 40.00m },
+            new Servicio { Nombre = "Paquete Familiar", Precio = 50.00m },
+            new Servicio { Nombre = "Plan de Datos Móvil", Precio = 25.00m }
         };
 
         public frmGenerarFactura()

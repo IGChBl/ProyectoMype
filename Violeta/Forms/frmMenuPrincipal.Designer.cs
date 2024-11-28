@@ -38,7 +38,6 @@
             this.actualizarOEliminarFacturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listadoDeClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeBajaAClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,29 +87,28 @@
             // nuevaFacturaToolStripMenuItem
             // 
             this.nuevaFacturaToolStripMenuItem.Name = "nuevaFacturaToolStripMenuItem";
-            this.nuevaFacturaToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.nuevaFacturaToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
             this.nuevaFacturaToolStripMenuItem.Text = "Nueva Factura";
             this.nuevaFacturaToolStripMenuItem.Click += new System.EventHandler(this.nuevaFacturaToolStripMenuItem_Click);
             // 
             // verHistorialDeFacturasToolStripMenuItem
             // 
             this.verHistorialDeFacturasToolStripMenuItem.Name = "verHistorialDeFacturasToolStripMenuItem";
-            this.verHistorialDeFacturasToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
+            this.verHistorialDeFacturasToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
             this.verHistorialDeFacturasToolStripMenuItem.Text = "Ver Historial de Facturas";
             this.verHistorialDeFacturasToolStripMenuItem.Click += new System.EventHandler(this.verHistorialDeFacturasToolStripMenuItem_Click);
             // 
             // actualizarOEliminarFacturasToolStripMenuItem
             // 
             this.actualizarOEliminarFacturasToolStripMenuItem.Name = "actualizarOEliminarFacturasToolStripMenuItem";
-            this.actualizarOEliminarFacturasToolStripMenuItem.Size = new System.Drawing.Size(286, 26);
-            this.actualizarOEliminarFacturasToolStripMenuItem.Text = "Actualizar o Eliminar Facturas";
+            this.actualizarOEliminarFacturasToolStripMenuItem.Size = new System.Drawing.Size(251, 26);
+            this.actualizarOEliminarFacturasToolStripMenuItem.Text = "Actualizar Facturas";
             this.actualizarOEliminarFacturasToolStripMenuItem.Click += new System.EventHandler(this.actualizarOEliminarFacturasToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarClienteToolStripMenuItem,
-            this.listadoDeClientesToolStripMenuItem,
             this.modificarClientesToolStripMenuItem,
             this.consultarClienteToolStripMenuItem,
             this.darDeBajaAClienteToolStripMenuItem});
@@ -124,13 +122,6 @@
             this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
             this.agregarClienteToolStripMenuItem.Text = "Agregar Cliente";
             this.agregarClienteToolStripMenuItem.Click += new System.EventHandler(this.agregarClienteToolStripMenuItem_Click);
-            // 
-            // listadoDeClientesToolStripMenuItem
-            // 
-            this.listadoDeClientesToolStripMenuItem.Name = "listadoDeClientesToolStripMenuItem";
-            this.listadoDeClientesToolStripMenuItem.Size = new System.Drawing.Size(230, 26);
-            this.listadoDeClientesToolStripMenuItem.Text = "Listado de Clientes";
-            this.listadoDeClientesToolStripMenuItem.Click += new System.EventHandler(this.listadoDeClientesToolStripMenuItem_Click);
             // 
             // modificarClientesToolStripMenuItem
             // 
@@ -190,7 +181,6 @@
         private System.Windows.Forms.ToolStripMenuItem verHistorialDeFacturasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agregarClienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listadoDeClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuraciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarClienteToolStripMenuItem;
