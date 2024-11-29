@@ -15,6 +15,8 @@ namespace Proyecto
 {
     public partial class frmGenerarFactura : Form
     {
+        private static frmGenerarFactura instancia_generar_factura = null;
+
         private List<Servicio> servicios = new List<Servicio>
         {
             new Servicio { Nombre = "Internet Básico", Precio = 20.00m },
@@ -29,6 +31,16 @@ namespace Proyecto
             new Servicio { Nombre = "Paquete Familiar", Precio = 50.00m },
             new Servicio { Nombre = "Plan de Datos Móvil", Precio = 25.00m }
         };
+
+        public static frmGenerarFactura ventanaGenerarFactura()
+        {
+            if(instancia_generar_factura == null)
+            {
+                instancia_generar_factura = new frmGenerarFactura();
+            }
+
+            return instancia_generar_factura;
+        }
 
         public frmGenerarFactura()
         {

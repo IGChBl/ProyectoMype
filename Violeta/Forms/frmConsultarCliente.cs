@@ -15,6 +15,17 @@ namespace Proyecto.Forms
     {
         private List<Cliente> clientes; // Lista de clientes cargados desde JSON
 
+        private static frmConsultarCliente instancia_consultar_cliente = null;
+
+        public static frmConsultarCliente ventanaConsultarCliente()
+        {
+            if (instancia_consultar_cliente == null)
+            {
+                instancia_consultar_cliente = new frmConsultarCliente();
+            }
+            return instancia_consultar_cliente;
+        }
+
         public frmConsultarCliente()
         {
             InitializeComponent();

@@ -15,6 +15,18 @@ namespace Proyecto
     {
         private List<Cliente> clientes; // Lista de clientes cargada desde JSON
         private Cliente clienteSeleccionado; // Cliente que se busca y selecciona para eliminar
+
+        private static frmDarBajaCliente instancia_dar_baja_cliente = null;
+
+        public static frmDarBajaCliente ventanaDarBajaCliente()
+        {
+            if (instancia_dar_baja_cliente == null)
+            {
+                instancia_dar_baja_cliente = new frmDarBajaCliente();
+            }
+            return instancia_dar_baja_cliente;
+        }
+
         public frmDarBajaCliente()
         {
             InitializeComponent();

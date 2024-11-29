@@ -17,6 +17,17 @@ namespace Proyecto
         private List<Cliente> clientes; // Lista de clientes cargada desde JSON
         private Cliente clienteSeleccionado; // Cliente que se busca y selecciona para modificar
 
+        private static frmModificarDatosClientes instancia_modificar_datos_cliente = null;
+
+        public static frmModificarDatosClientes ventanaModificarDatosClientes()
+        {
+            if(instancia_modificar_datos_cliente == null)
+            {
+                instancia_modificar_datos_cliente = new frmModificarDatosClientes();
+            }
+            return instancia_modificar_datos_cliente;
+        }
+
         public frmModificarDatosClientes()
         {
             InitializeComponent();

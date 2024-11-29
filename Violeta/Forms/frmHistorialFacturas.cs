@@ -14,6 +14,16 @@ namespace Proyecto
 {
     public partial class frmHistorialFacturas : Form
     {
+        private static frmHistorialFacturas instancia_historial_facturas = null;
+
+        public static frmHistorialFacturas ventanaHistorialFacturas()
+        {
+            if(instancia_historial_facturas == null)
+            {
+                instancia_historial_facturas= new frmHistorialFacturas();
+            }
+            return instancia_historial_facturas;
+        }
         public frmHistorialFacturas()
         {
             InitializeComponent();

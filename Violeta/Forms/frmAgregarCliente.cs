@@ -15,6 +15,17 @@ namespace Proyecto.Forms
     public partial class frmAgregarCliente : Form
     {
         private List<Cliente> clientes; // Lista de clientes cargada desde JSON
+        private static frmAgregarCliente instancia_agregar_cliente = null;
+
+        public static frmAgregarCliente ventanaAgregarCliente()
+        {
+            if(instancia_agregar_cliente == null)
+            {
+                instancia_agregar_cliente= new frmAgregarCliente();
+            }
+
+            return instancia_agregar_cliente;
+        }
 
         public frmAgregarCliente()
         {

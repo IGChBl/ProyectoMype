@@ -14,6 +14,16 @@ namespace Proyecto
 {
     public partial class frmActualizarEliminarFacturaErronea : Form
     {
+        private static frmActualizarEliminarFacturaErronea instancia_actualizar_eliminar_factura_erronea = null;
+
+        public static frmActualizarEliminarFacturaErronea ventanaActualizarEliminarFacturaErronea()
+        {
+            if (instancia_actualizar_eliminar_factura_erronea == null) 
+            {
+                instancia_actualizar_eliminar_factura_erronea = new frmActualizarEliminarFacturaErronea();
+            }
+            return instancia_actualizar_eliminar_factura_erronea;
+        }
 
         public frmActualizarEliminarFacturaErronea()
         {
