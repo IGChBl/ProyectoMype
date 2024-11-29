@@ -67,15 +67,21 @@
             // btnLogIn
             // 
             resources.ApplyResources(this.btnLogIn, "btnLogIn");
+            this.btnLogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnLogIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnLogIn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.UseVisualStyleBackColor = false;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // btnExit
             // 
             resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnExit.Name = "btnExit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panel1
@@ -98,8 +104,8 @@
             this.tableLayoutPanel1.Controls.Add(this.lblPassword, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblUser, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tbUser, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnExit, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.btnLogIn, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnExit, 1, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
             // lblIngreseSusDatos

@@ -123,35 +123,41 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tbUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 54</value>
+    <value>174, 83</value>
   </data>
   <data name="tbUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbUser.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="tbUser.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 20</value>
+    <value>284, 25</value>
   </data>
   <data name="tbPassword.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
   <data name="tbPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 97</value>
+    <value>174, 125</value>
   </data>
   <data name="tbPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tbPassword.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="tbPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="tbPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 20</value>
+    <value>284, 25</value>
   </data>
   <data name="lblUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
   </data>
   <data name="lblUser.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 58</value>
+    <value>124, 89</value>
   </data>
   <data name="lblUser.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -163,7 +169,7 @@
     <value>Right</value>
   </data>
   <data name="lblPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>106, 101</value>
+    <value>106, 131</value>
   </data>
   <data name="lblPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -171,8 +177,35 @@
   <data name="lblPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 13</value>
   </data>
+  <data name="btnLogIn.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnLogIn.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btnLogIn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAArCAYAAAAKasrDAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wAAADsABataJCQAAAs1JREFUWEft2FmoTVEcx/FjyEwIRcqQlCISMieUKeWNByVleEQZklA8kAekDIko
+        lKGUDA/KEGWI8qAkwwMyFkkiGb/f7v3XdjvXOfvcs8+55f7q0z333157rb3P3muvfXJNaUpT/vN0x0iM
+        wXB0QaPIDJzGB/xOeIujGI2qpC0OITmo+mxGRdMalxED+IlzWIPF2IhrSA5yPyoWO4uOb2EE8mUmniG2
+        XY7MMxnR4Q20w7/SBy/g9l9q/880F2Bnn9HPQhGZhjiorRayilPJJ9jRXgspch22e4iWFrLIJMSZ8Kyk
+        yUrY7jv6Wsgi3qF28gMDLKRI8mseayGLLEWchWKvv4iDigGOs5BFZqPUTpbAdr8w0EIW6Q+/XjvaYCFF
+        TsF2z+FTKLPcgR05txWaAyOesW+w3WELWWYB7EgHLBRIcyQfe6OQaezQx1t0uBvtkS+9cB6x7UFUJF6L
+        LxEdP4ILhfEYjCnYgneIbW6ivgPJJD3xBDGAf7mKiqYDvItdlOYbUF0+3pzkK5KhuI/kAByo19p2uDjd
+        BdeL8dwOF+GZzywT8RHR4QMsRH3vH72xGm8QbbwsMnkWO5clB7cTxc6D3s1nEG09sE4oW1rgLqKDtSgl
+        TtKxj+MWypVliB3vsdCAXEHsK+2SLW+cu17BHT5FGzQkXn+uxt2fi9i6WYWz8FsrKvMQR+xjrhzZgdin
+        k3tkPqJ+As1QMCdhg9co1ypkENynZ3KYBTIHLsVigOtQcICt8Bg28FeCcuY2ptd8zE1FrHa0HkXF6eEr
+        bLTCQgmxsyM1H/9K19q//jQS16S2oej4I1A09FpMm3iHkfNm3QzBe8Q2+5AqHuWsWj0spIztkl/dJkR8
+        6UquiI6hKnGQ8ZqgCeiM5ErIp4zrzKplLmIwzqXxEq9L8MeoqmcRYlDBO7kjGk2cCWJwLtm6odHFaece
+        Ml0XNjQl3BC53B/gX/hlg7tDAQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnLogIn.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="btnLogIn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 136</value>
+    <value>254, 163</value>
   </data>
   <data name="btnLogIn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -180,17 +213,58 @@
   <data name="btnLogIn.Size" type="System.Drawing.Size, System.Drawing">
     <value>156, 41</value>
   </data>
+  <data name="btnLogIn.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
   <data name="btnExit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
+  <data name="btnExit.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btnExit.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAl
+        PQAAJT0Bm2rYWQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPOSURBVFhH7Zhb
+        qFRVGMcnETPMMsp7pmVBJChGEZYFoeCLij5IpJZ2U9QHBTUSyYxUDC/5JIqIgi/eLyjkBW94wVtaZCaU
+        kGiFqZCopZjW77f3XtOec86cmTkzx/Myf/jhWmuvWec/a3/ft9aYqaqqqgprGRyD74rkAIyH+6Z/4Tfw
+        DxeD8w/DfZN/cFLcLEonoLEMPgSPxM3/pcFP4mZROgWH4mbF1BZWwt+gn73wMkRqaoPu2A+gD/NhHlyF
+        f+BZaHKD00EPb0S9WI/DJdhup6kNHoXTcTNHn4PeGs1gJ3BXPoBh8Do8D+3gQQjaAL/EzRwtgbs2KmXw
+        AZgIe8DX47r5+AsugLv3czI2BYL6gWML7diohMFp4FoG/AoYA2ZiB+gCvWEgTIBFsBk0eBH8nNj+MWl7
+        KLSCihm0ProrLUFTA2AWGOiWkMnJWJSZKWleD5tgI+yDjyEypypl0J1xLcuD/8ptMAE8qUKNEw0Hhc+9
+        GPXqkA8barAjvBU3Iw0HX99o6AXZXUCD4R74Gl9yINGvUNcXzqocgyGYLbD1ydhzZ43PpxxAo6A7nIFt
+        DuRTqQa/AS8NQZ7jrrE06tWWZcbnnt9tHEBzwDGL9Hqoqw5mVchgM+gGz4EB7jfWpG2x3i2HYLIFBJkY
+        jm+BMD4bHJMF8GXS1qwJVks+rM9geI31kU6AEaDMZPvuUNBccOxTcEcPgkV7MThuFRgKOfJBfQYfg5Hw
+        PrwH5+GnpC2eEqvAdY6DO6pmgmPGmfIqZZJcj3qZzFfg89XwKrwJu5IxYzarQgZrShP742YkC/Cf4HiI
+        sSfBdddGvUymJzSHvuBum2gvgF/iGjj3ewg7/AVkVarBdBb3Bz//LQRzyqx0t7xKeQY7x8TSpF/IZ8ay
+        MWeMW6os0M5z/GnIqhyDH8FuSJsbBK45DjR0GQwLy4yh0R68NNwCLwkhJFRnqJUo5RhM6wl4B26Cc9RW
+        cP2uYOH2dRqDvvIecAP8weYu5lU5Bh+GIeA56jriYW8Ge1mw/yEEPQO+Qo/AR2EqOMcLal41xODX8DaE
+        AL8C88FXp14Bx9dEvVz1AZ953Bkitr0j5lWpBq1fxs4dMBnCId8aPL6sba55DtzhmgoGTRbj1LY/mvKq
+        VIMa+AP8nLv2LvjK7ctZsBCngz+t18B5jWbwJOyAzyCY8hIwAwz+QrIW+hnnjk3aBQ2W8sM9fVkwE2te
+        QAspGDQ0wl3QCpBXTvgdfE3F4Pxy/mfBhDC5DBNroUXeeplX3kCOgNlZDB5zxk458uzdCevAm1JVVVXV
+        MGUy/wHxO1iDovs5xwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnExit.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="btnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 203</value>
+    <value>255, 214</value>
   </data>
   <data name="btnExit.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 41</value>
+    <value>155, 41</value>
+  </data>
+  <data name="btnExit.Text" xml:space="preserve">
+    <value>&amp;Salir</value>
+  </data>
+  <data name="btnExit.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
   <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
     <value>2</value>
@@ -202,7 +276,7 @@
     <value>Microsoft Sans Serif, 15.75pt, style=Bold</value>
   </data>
   <data name="lblIngreseSusDatos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 9</value>
+    <value>174, 25</value>
   </data>
   <data name="lblIngreseSusDatos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -3625,8 +3699,5 @@
         /6CcXv+dml3/mZdb/5eVWv+Ukln/k5BY/5KPVv+Sj1T/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
   </data>
 </root>
