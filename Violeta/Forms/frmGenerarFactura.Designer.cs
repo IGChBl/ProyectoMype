@@ -35,15 +35,17 @@
             this.dgvServicios = new System.Windows.Forms.DataGridView();
             this.btnGerenarFactura = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnFacturaPDF = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbCliente
             // 
             this.cmbCliente.FormattingEnabled = true;
-            this.cmbCliente.Location = new System.Drawing.Point(191, 76);
+            this.cmbCliente.Location = new System.Drawing.Point(143, 62);
+            this.cmbCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCliente.Name = "cmbCliente";
-            this.cmbCliente.Size = new System.Drawing.Size(250, 24);
+            this.cmbCliente.Size = new System.Drawing.Size(188, 21);
             this.cmbCliente.TabIndex = 0;
             this.cmbCliente.Text = "Seleccione un Cliente";
             this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
@@ -51,9 +53,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 76);
+            this.label1.Location = new System.Drawing.Point(20, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 16);
+            this.label1.Size = new System.Drawing.Size(91, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Selecionar cliente";
             // 
@@ -62,9 +65,10 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 150);
+            this.label2.Location = new System.Drawing.Point(20, 122);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 16);
+            this.label2.Size = new System.Drawing.Size(107, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Seleccionar servicios";
             // 
@@ -76,19 +80,21 @@
             this.dgvServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvServicios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvServicios.Location = new System.Drawing.Point(191, 153);
+            this.dgvServicios.Location = new System.Drawing.Point(143, 124);
+            this.dgvServicios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvServicios.Name = "dgvServicios";
             this.dgvServicios.RowHeadersWidth = 51;
             this.dgvServicios.RowTemplate.Height = 24;
-            this.dgvServicios.Size = new System.Drawing.Size(392, 140);
+            this.dgvServicios.Size = new System.Drawing.Size(294, 114);
             this.dgvServicios.TabIndex = 3;
             // 
             // btnGerenarFactura
             // 
             this.btnGerenarFactura.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGerenarFactura.Location = new System.Drawing.Point(481, 344);
+            this.btnGerenarFactura.Location = new System.Drawing.Point(361, 280);
+            this.btnGerenarFactura.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGerenarFactura.Name = "btnGerenarFactura";
-            this.btnGerenarFactura.Size = new System.Drawing.Size(134, 23);
+            this.btnGerenarFactura.Size = new System.Drawing.Size(100, 23);
             this.btnGerenarFactura.TabIndex = 6;
             this.btnGerenarFactura.Text = "Generar factura";
             this.btnGerenarFactura.UseVisualStyleBackColor = true;
@@ -99,17 +105,29 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(305, 21);
+            this.label4.Location = new System.Drawing.Point(229, 17);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(237, 24);
+            this.label4.Size = new System.Drawing.Size(197, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Generar nueva factura";
             // 
+            // btnFacturaPDF
+            // 
+            this.btnFacturaPDF.Location = new System.Drawing.Point(361, 324);
+            this.btnFacturaPDF.Name = "btnFacturaPDF";
+            this.btnFacturaPDF.Size = new System.Drawing.Size(100, 23);
+            this.btnFacturaPDF.TabIndex = 8;
+            this.btnFacturaPDF.Text = "Factura PDF";
+            this.btnFacturaPDF.UseVisualStyleBackColor = true;
+            this.btnFacturaPDF.Click += new System.EventHandler(this.btnFacturaPDF_Click);
+            // 
             // frmGenerarFactura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 608);
+            this.ClientSize = new System.Drawing.Size(656, 494);
+            this.Controls.Add(this.btnFacturaPDF);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnGerenarFactura);
             this.Controls.Add(this.dgvServicios);
@@ -117,6 +135,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbCliente);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmGenerarFactura";
             this.Text = "Generar Facturas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -135,5 +154,6 @@
         private System.Windows.Forms.DataGridView dgvServicios;
         private System.Windows.Forms.Button btnGerenarFactura;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnFacturaPDF;
     }
 }
